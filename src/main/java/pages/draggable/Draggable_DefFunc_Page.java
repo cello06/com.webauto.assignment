@@ -2,10 +2,9 @@ package pages.draggable;
 
 import pages.BasePage;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class DefaultFunctionality_Page extends BasePage {
+public class Draggable_DefFunc_Page extends BasePage {
 
     @FindBy(id = "draggable")
     private WebElement draggable;

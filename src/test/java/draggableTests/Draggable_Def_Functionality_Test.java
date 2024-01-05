@@ -1,3 +1,6 @@
+package draggableTests;
+
+import BaseTest.Hooks;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utils.Pages;
@@ -13,18 +16,18 @@ public class Draggable_Def_Functionality_Test extends Hooks {
         pages.getWebAutomationPage().clickOnDraggableLink();
 
         // 3. click on the default functionality button
-        pages.getWebAutomationPage().clickOnDefaultFunctionalityLink();
+        pages.getWebAutomationPage().clickOnDraggableDefaultFunctionalityLink();
 
         // get the initial location of draggable element
-        int initialX = pages.getDefaultFunctionalityPage().getLocationOfDraggableX();
-        int initialY = pages.getDefaultFunctionalityPage().getLocationOfDraggableY();
+        int initialX = pages.getDraggableDefFuncPage().getLocationOfDraggableX();
+        int initialY = pages.getDraggableDefFuncPage().getLocationOfDraggableY();
 
         // 4. Drag the draggable element by 100 pixels to the right and 100 pixels down
-        pages.getDefaultFunctionalityPage().dragAndDropByOffsets(100, 100);
+        pages.getDraggableDefFuncPage().dragAndDropByOffsets(100, 100);
 
         // 5. Verify that the element has been dragged
-        int finalX = pages.getDefaultFunctionalityPage().getLocationOfDraggableX();
-        int finalY = pages.getDefaultFunctionalityPage().getLocationOfDraggableY();
+        int finalX = pages.getDraggableDefFuncPage().getLocationOfDraggableX();
+        int finalY = pages.getDraggableDefFuncPage().getLocationOfDraggableY();
 
         Assertions.assertThat(finalX).isGreaterThan(initialX);
         Assertions.assertThat(finalY).isGreaterThan(initialY);

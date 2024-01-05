@@ -70,25 +70,11 @@
                 <version>3.2.3</version>
                 <configuration>
                     <includes>
-                        <include>**/*DefaultFunctionality_Test.java</include>
+                        <include>**/*.java</include>
                     </includes>
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>io.spring.javaformat</groupId>
-                <artifactId>spring-javaformat-maven-plugin</artifactId>
-                <version>0.0.38</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <inherited>true</inherited>
-                        <goals>
-                            <goal>validate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
