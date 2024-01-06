@@ -8,6 +8,7 @@ import pages.droppable.Droppable_DefFunc_Page;
 import pages.iframe.NestedIframe_Page;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.selectable.Selectable_DefFunc_Page;
+import pages.selectable.SerializePage;
 
 public class Pages {
 
@@ -26,6 +27,7 @@ public class Pages {
     private Selectable_DefFunc_Page selectableDefFuncPage;
 
     private WebAutomationPage webAutomationPage;
+    private SerializePage serializePage;
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -35,6 +37,7 @@ public class Pages {
         resizableDefFuncPage = new Resizable_DefFunc_Page();
         selectableDefFuncPage = new Selectable_DefFunc_Page();
         nestedIframePage = new NestedIframe_Page();
+        serializePage= new SerializePage();
 
     }
 
@@ -68,6 +71,10 @@ public class Pages {
 
     public NestedIframe_Page nestedIframePage(){
         return nestedIframePage;
+    }
+
+    public SerializePage getSerializePage(){
+        return serializePage;
     }
 
 }

@@ -31,6 +31,9 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Nested Iframe")
     private WebElement nestedIframeLink;
 
+    @FindBy(linkText = "Serialize")
+    private WebElement serializeLink;
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -72,5 +75,9 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnNestedIframe(){
         nestedIframeLink.click();
+    }
+
+    public void clickSerializeLink(){
+        serializeLink.click();
     }
 }
