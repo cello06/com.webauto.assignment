@@ -8,6 +8,7 @@ import pages.draggable.Draggable_DefFunc_Page;
 import pages.draggable.HandlesPage;
 import pages.droppable.AcceptPage;
 import pages.droppable.Droppable_DefFunc_Page;
+import pages.droppable.RevertDraggablePositionPage;
 import pages.iframe.NestedIframe_Page;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.selectable.Selectable_DefFunc_Page;
@@ -34,6 +35,7 @@ public class Pages {
     private HandlesPage handlesPage;
 
     private AcceptPage acceptPage;
+    private RevertDraggablePositionPage revertDraggablePositionPage;
 
     public Pages() {
         homePage = new HomePage();
@@ -48,6 +50,7 @@ public class Pages {
         constrainMovementPage = new ConstrainMovementPage();
         handlesPage = new HandlesPage();
         acceptPage = new AcceptPage();
+        revertDraggablePositionPage = new RevertDraggablePositionPage();
 
     }
 
@@ -94,6 +97,9 @@ public class Pages {
     }
     public AcceptPage getAcceptPage(){
         return acceptPage;
+    }
+    public RevertDraggablePositionPage getRevertDraggablePositionPage(){
+        return revertDraggablePositionPage;
     }
 
 }

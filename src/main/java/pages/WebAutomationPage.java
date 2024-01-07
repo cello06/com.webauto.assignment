@@ -40,6 +40,8 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Accept")
     private WebElement acceptLink;
+    @FindBy(linkText = "Revert draggable position")
+    private WebElement revertDraggablePositionLink;
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -95,5 +97,8 @@ public class WebAutomationPage extends BasePage {
     }
     public void clickAcceptLink(){
         acceptLink.click();
+    }
+    public void clickRevertDraggablePosition(){
+        revertDraggablePositionLink.click();
     }
 }
