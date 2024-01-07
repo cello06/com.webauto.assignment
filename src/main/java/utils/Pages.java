@@ -6,6 +6,7 @@ import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.Draggable_DefFunc_Page;
 import pages.draggable.HandlesPage;
+import pages.droppable.AcceptPage;
 import pages.droppable.Droppable_DefFunc_Page;
 import pages.iframe.NestedIframe_Page;
 import pages.resizable.Resizable_DefFunc_Page;
@@ -32,6 +33,8 @@ public class Pages {
     private SerializePage serializePage;
     private HandlesPage handlesPage;
 
+    private AcceptPage acceptPage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -44,6 +47,7 @@ public class Pages {
         serializePage = new SerializePage();
         constrainMovementPage = new ConstrainMovementPage();
         handlesPage = new HandlesPage();
+        acceptPage = new AcceptPage();
 
     }
 
@@ -87,6 +91,9 @@ public class Pages {
     }
     public HandlesPage getHandlesPage(){
         return handlesPage;
+    }
+    public AcceptPage getAcceptPage(){
+        return acceptPage;
     }
 
 }

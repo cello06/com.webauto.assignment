@@ -38,6 +38,9 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Handles")
     private  WebElement handlesLink;
 
+    @FindBy(linkText = "Accept")
+    private WebElement acceptLink;
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -89,5 +92,8 @@ public class WebAutomationPage extends BasePage {
     }
     public void clickHandlesLink(){
         handlesLink.click();
+    }
+    public void clickAcceptLink(){
+        acceptLink.click();
     }
 }
