@@ -26,7 +26,7 @@ public class SerializeTest extends Hooks {
      * 16. Verify that "You've selected: #1 #2 #3" is displayed
      */
     @Test
-    void testSelectableDefFunc() throws InterruptedException {
+    void testSerializeFunctionality() throws InterruptedException {
         //1. Open the browser and navigate to the URL+
         //2. Click on webautomation link
         pages.getHomePage().clickOnWebAutomationLink();

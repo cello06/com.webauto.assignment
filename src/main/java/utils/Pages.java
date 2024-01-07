@@ -3,6 +3,7 @@ package utils;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.draggable.AutoScrolling_Page;
+import pages.draggable.ConstrainMovementPage;
 import pages.draggable.Draggable_DefFunc_Page;
 import pages.droppable.Droppable_DefFunc_Page;
 import pages.iframe.NestedIframe_Page;
@@ -13,7 +14,7 @@ import pages.selectable.SerializePage;
 public class Pages {
 
     private AutoScrolling_Page autoScrollingPage;
-
+    private ConstrainMovementPage constrainMovementPage;
     private Draggable_DefFunc_Page draggableDefFuncPage;
 
     private Droppable_DefFunc_Page droppableDefFuncPage;
@@ -28,6 +29,7 @@ public class Pages {
 
     private WebAutomationPage webAutomationPage;
     private SerializePage serializePage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -37,7 +39,8 @@ public class Pages {
         resizableDefFuncPage = new Resizable_DefFunc_Page();
         selectableDefFuncPage = new Selectable_DefFunc_Page();
         nestedIframePage = new NestedIframe_Page();
-        serializePage= new SerializePage();
+        serializePage = new SerializePage();
+        constrainMovementPage = new ConstrainMovementPage();
 
     }
 
@@ -61,20 +64,23 @@ public class Pages {
         return droppableDefFuncPage;
     }
 
-    public Resizable_DefFunc_Page getResizableDefFuncPage(){
+    public Resizable_DefFunc_Page getResizableDefFuncPage() {
         return resizableDefFuncPage;
     }
 
-    public Selectable_DefFunc_Page getSelectableDefFuncPage(){
+    public Selectable_DefFunc_Page getSelectableDefFuncPage() {
         return selectableDefFuncPage;
     }
 
-    public NestedIframe_Page nestedIframePage(){
+    public NestedIframe_Page nestedIframePage() {
         return nestedIframePage;
     }
 
-    public SerializePage getSerializePage(){
+    public SerializePage getSerializePage() {
         return serializePage;
+    }
+    public ConstrainMovementPage getConstrainMovementPage(){
+        return constrainMovementPage;
     }
 
 }

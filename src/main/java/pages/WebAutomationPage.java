@@ -33,6 +33,8 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Serialize")
     private WebElement serializeLink;
+    @FindBy(linkText = "Constrain Movement")
+    private WebElement constrainMovementLink;
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -79,5 +81,8 @@ public class WebAutomationPage extends BasePage {
 
     public void clickSerializeLink(){
         serializeLink.click();
+    }
+    public void clickConstrainMovementLink(){
+        constrainMovementLink.click();
     }
 }
