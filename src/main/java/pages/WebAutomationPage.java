@@ -33,6 +33,8 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Nested Iframe")
     private WebElement nestedIframeLink;
+    @FindBy(linkText = "Normal Iframe")
+    private WebElement normalIframeLink;
 
     @FindBy(linkText = "Serialize")
     private WebElement serializeLink;
@@ -54,7 +56,8 @@ public class WebAutomationPage extends BasePage {
     private WebElement alertsLink;
     @FindBy(linkText = "Alert Types")
     private WebElement alertTypesLink;
-    public void clickInarAcademyImageLink(){
+
+    public void clickInarAcademyImageLink() {
         inarAcademyImage.click();
     }
 
@@ -102,6 +105,10 @@ public class WebAutomationPage extends BasePage {
         nestedIframeLink.click();
     }
 
+    public void clickOnNormalIframe() {
+        normalIframeLink.click();
+    }
+
     public void clickSerializeLink() {
         serializeLink.click();
     }
@@ -129,7 +136,8 @@ public class WebAutomationPage extends BasePage {
     public void clickTextAreaLink() {
         textAreaLink.click();
     }
-    public void clickAlertsLink(){
+
+    public void clickAlertsLink() {
         alertsLink.click();
     }
 

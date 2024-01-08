@@ -1,5 +1,6 @@
 package utils;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,8 +8,13 @@ import org.openqa.selenium.interactions.Actions;
 public class BrowserUtils {
 
     private static Actions actions = new Actions(Driver.getDriver());
+    static JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
     public static void scrollDownWithPageDown(){
         actions.keyDown(Keys.PAGE_DOWN).release().build().perform();
+    }
+    public static void scrollVertically(int pixelAmount) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scroll(0," + pixelAmount + ")");
     }
     public static void scrollUpWithPageUp(){
         actions.keyDown(Keys.PAGE_UP).release().build().perform();
