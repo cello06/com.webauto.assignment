@@ -11,6 +11,7 @@ import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.RevertDraggablePositionPage;
 import pages.iframe.NestedIframe_Page;
 import pages.resizable.Resizable_DefFunc_Page;
+import pages.resizable.SynchronousResizePage;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.SerializePage;
 
@@ -37,6 +38,8 @@ public class Pages {
     private AcceptPage acceptPage;
     private RevertDraggablePositionPage revertDraggablePositionPage;
 
+    private SynchronousResizePage synchronousResizePage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -51,6 +54,7 @@ public class Pages {
         handlesPage = new HandlesPage();
         acceptPage = new AcceptPage();
         revertDraggablePositionPage = new RevertDraggablePositionPage();
+        synchronousResizePage = new SynchronousResizePage();
 
     }
 
@@ -89,17 +93,25 @@ public class Pages {
     public SerializePage getSerializePage() {
         return serializePage;
     }
-    public ConstrainMovementPage getConstrainMovementPage(){
+
+    public ConstrainMovementPage getConstrainMovementPage() {
         return constrainMovementPage;
     }
-    public HandlesPage getHandlesPage(){
+
+    public HandlesPage getHandlesPage() {
         return handlesPage;
     }
-    public AcceptPage getAcceptPage(){
+
+    public AcceptPage getAcceptPage() {
         return acceptPage;
     }
-    public RevertDraggablePositionPage getRevertDraggablePositionPage(){
+
+    public RevertDraggablePositionPage getRevertDraggablePositionPage() {
         return revertDraggablePositionPage;
+    }
+
+    public SynchronousResizePage getSynchronousResizePage() {
+        return synchronousResizePage;
     }
 
 }
