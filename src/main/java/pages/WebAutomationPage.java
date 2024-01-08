@@ -7,6 +7,9 @@ import java.util.List;
 
 public class WebAutomationPage extends BasePage {
 
+    @FindBy(xpath = "(//a[@href='/'])[1]")
+    private WebElement inarAcademyImage;
+
     @FindBy(linkText = "Draggable")
     private WebElement draggableLink;
 
@@ -47,6 +50,13 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Textarea")
     private WebElement textAreaLink;
+    @FindBy(linkText = "Alerts")
+    private WebElement alertsLink;
+    @FindBy(linkText = "Alert Types")
+    private WebElement alertTypesLink;
+    public void clickInarAcademyImageLink(){
+        inarAcademyImage.click();
+    }
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -118,5 +128,12 @@ public class WebAutomationPage extends BasePage {
 
     public void clickTextAreaLink() {
         textAreaLink.click();
+    }
+    public void clickAlertsLink(){
+        alertsLink.click();
+    }
+
+    public void clickAlertTypesLink() {
+        alertTypesLink.click();
     }
 }

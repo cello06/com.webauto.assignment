@@ -2,6 +2,7 @@ package utils;
 
 import pages.HomePage;
 import pages.WebAutomationPage;
+import pages.alerttypes.AlertTypesPage;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.Draggable_DefFunc_Page;
@@ -42,6 +43,7 @@ public class Pages {
     private SynchronousResizePage synchronousResizePage;
 
     private TextAreaPage textAreaPage;
+    private AlertTypesPage alertTypesPage;
 
     public Pages() {
         homePage = new HomePage();
@@ -59,6 +61,7 @@ public class Pages {
         revertDraggablePositionPage = new RevertDraggablePositionPage();
         synchronousResizePage = new SynchronousResizePage();
         textAreaPage = new TextAreaPage();
+        alertTypesPage = new AlertTypesPage();
     }
 
     public HomePage getHomePage() {
@@ -119,6 +122,9 @@ public class Pages {
 
     public TextAreaPage getTextAreaPage() {
         return textAreaPage;
+    }
+    public AlertTypesPage getAlertTypesPage(){
+        return alertTypesPage;
     }
 
 }
