@@ -36,7 +36,7 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Constrain Movement")
     private WebElement constrainMovementLink;
     @FindBy(linkText = "Handles")
-    private  WebElement handlesLink;
+    private WebElement handlesLink;
 
     @FindBy(linkText = "Accept")
     private WebElement acceptLink;
@@ -44,6 +44,9 @@ public class WebAutomationPage extends BasePage {
     private WebElement revertDraggablePositionLink;
     @FindBy(linkText = "Synchronus Resize")
     private WebElement synchronousResizeLink;
+
+    @FindBy(linkText = "Textarea")
+    private WebElement textAreaLink;
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -56,6 +59,7 @@ public class WebAutomationPage extends BasePage {
     public void clickOnDroppableDefaultFunctionalityLink() {
         defaultFunctionalityLink.click();
     }
+
     public void clickOnDroppableLink() {
         droppableLink.click();
     }
@@ -64,47 +68,55 @@ public class WebAutomationPage extends BasePage {
         autoScrollingLink.click();
     }
 
-    public void clickOnResizableLink(){
+    public void clickOnResizableLink() {
         resizableLink.click();
     }
 
-    public void clickOnResizableDefaultFuncLink(){
+    public void clickOnResizableDefaultFuncLink() {
         defaultFunctionalityLink.click();
     }
 
-    public void clickOnSelectableLink(){
+    public void clickOnSelectableLink() {
         selectableLink.click();
     }
 
-    public void clickOnDefaultFunctionality(){
+    public void clickOnDefaultFunctionality() {
         defaultFunctionalityLink.click();
     }
 
-    public void clickOnIframeLink(){
+    public void clickOnIframeLink() {
         iframeLink.click();
     }
 
-    public void clickOnNestedIframe(){
+    public void clickOnNestedIframe() {
         nestedIframeLink.click();
     }
 
-    public void clickSerializeLink(){
+    public void clickSerializeLink() {
         serializeLink.click();
     }
-    public void clickConstrainMovementLink(){
+
+    public void clickConstrainMovementLink() {
         constrainMovementLink.click();
     }
-    public void clickHandlesLink(){
+
+    public void clickHandlesLink() {
         handlesLink.click();
     }
-    public void clickAcceptLink(){
+
+    public void clickAcceptLink() {
         acceptLink.click();
     }
-    public void clickRevertDraggablePosition(){
+
+    public void clickRevertDraggablePosition() {
         revertDraggablePositionLink.click();
     }
 
-    public void clickSynchronousResizeLink(){
+    public void clickSynchronousResizeLink() {
         synchronousResizeLink.click();
+    }
+
+    public void clickTextAreaLink() {
+        textAreaLink.click();
     }
 }
