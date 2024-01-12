@@ -3,6 +3,7 @@ package utils;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerttypes.AlertTypesPage;
+import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.Draggable_DefFunc_Page;
@@ -20,58 +21,72 @@ import pages.selectable.SerializePage;
 
 public class Pages {
 
+    //HOMEPAGE
+    private HomePage homePage;
+
+    //WEB_AUTOMATION_PAGE
+    private WebAutomationPage webAutomationPage;
+        //DRAGGABLE_TAB_PAGE
     private AutoScrolling_Page autoScrollingPage;
     private ConstrainMovementPage constrainMovementPage;
     private Draggable_DefFunc_Page draggableDefFuncPage;
+    private HandlesPage handlesPage;
 
+        //DROPPABLE_TAB_PAGE
     private Droppable_DefFunc_Page droppableDefFuncPage;
+    private AcceptPage acceptPage;
+    private RevertDraggablePositionPage revertDraggablePositionPage;
 
-    private HomePage homePage;
+        //RESIZABLE_TAB_PAGE
+    private Resizable_DefFunc_Page resizableDefFuncPage;
+    private SynchronousResizePage synchronousResizePage;
+    private TextAreaPage textAreaPage;
 
+        //SELECTABLE_TAB_PAGE
     private NestedIframePage nestedIframePage;
 
     private NormalIFramePage normalIFramePage;
 
-    private Resizable_DefFunc_Page resizableDefFuncPage;
-
     private Selectable_DefFunc_Page selectableDefFuncPage;
 
-    private WebAutomationPage webAutomationPage;
     private SerializePage serializePage;
-    private HandlesPage handlesPage;
 
-    private AcceptPage acceptPage;
-    private RevertDraggablePositionPage revertDraggablePositionPage;
+        //AUTOCOMPLETE_TAB_PAGE
+    private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
 
-    private SynchronousResizePage synchronousResizePage;
 
-    private TextAreaPage textAreaPage;
+        //ALERTS_TAB_PAGE
     private AlertTypesPage alertTypesPage;
 
     public Pages() {
+        //HOMEPAGE
         homePage = new HomePage();
-        webAutomationPage = new WebAutomationPage();
-        draggableDefFuncPage = new Draggable_DefFunc_Page();
+        //WEB_AUTOMATION_PAGE
+        acceptPage = new AcceptPage();
+        alertTypesPage = new AlertTypesPage();
+        autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrolling_Page();
+        constrainMovementPage = new ConstrainMovementPage();
+        draggableDefFuncPage = new Draggable_DefFunc_Page();
         droppableDefFuncPage = new Droppable_DefFunc_Page();
-        resizableDefFuncPage = new Resizable_DefFunc_Page();
-        selectableDefFuncPage = new Selectable_DefFunc_Page();
+        handlesPage = new HandlesPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
+        selectableDefFuncPage = new Selectable_DefFunc_Page();
         serializePage = new SerializePage();
-        constrainMovementPage = new ConstrainMovementPage();
-        handlesPage = new HandlesPage();
-        acceptPage = new AcceptPage();
-        revertDraggablePositionPage = new RevertDraggablePositionPage();
         synchronousResizePage = new SynchronousResizePage();
+        resizableDefFuncPage = new Resizable_DefFunc_Page();
+        revertDraggablePositionPage = new RevertDraggablePositionPage();
         textAreaPage = new TextAreaPage();
-        alertTypesPage = new AlertTypesPage();
-    }
+        webAutomationPage = new WebAutomationPage();
 
+    }
+    //HOMEPAGE
     public HomePage getHomePage() {
         return homePage;
     }
 
+    //WEB_AUTOMATION_PAGE
     public WebAutomationPage getWebAutomationPage() {
         return webAutomationPage;
     }
@@ -134,6 +149,9 @@ public class Pages {
 
     public AlertTypesPage getAlertTypesPage() {
         return alertTypesPage;
+    }
+    public AutocompleteDefaultFunctionalityPage getAutocompleteDefaultFunctionalityPage(){
+        return autocompleteDefaultFunctionalityPage;
     }
 
 }

@@ -3,72 +3,93 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 public class WebAutomationPage extends BasePage {
 
+    //GENERAL
     @FindBy(xpath = "(//a[@href='/'])[1]")
     private WebElement inarAcademyImage;
-
-    @FindBy(linkText = "Draggable")
-    private WebElement draggableLink;
-
     @FindBy(linkText = "Default Functionality")
     private WebElement defaultFunctionalityLink;
 
+    //DRAGGABLE
+    @FindBy(linkText = "Draggable")
+    private WebElement draggableLink;
     @FindBy(linkText = "Auto Scrolling")
     private WebElement autoScrollingLink;
-
-    @FindBy(linkText = "Droppable")
-    private WebElement droppableLink;
-
-    @FindBy(linkText = "Resizable")
-    private WebElement resizableLink;
-
-    @FindBy(linkText = "Selectable")
-    private WebElement selectableLink;
-
-    @FindBy(linkText = "Iframe")
-    private WebElement iframeLink;
-
-    @FindBy(linkText = "Nested Iframe")
-    private WebElement nestedIframeLink;
-    @FindBy(linkText = "Normal Iframe")
-    private WebElement normalIframeLink;
-
-    @FindBy(linkText = "Serialize")
-    private WebElement serializeLink;
     @FindBy(linkText = "Constrain Movement")
     private WebElement constrainMovementLink;
     @FindBy(linkText = "Handles")
     private WebElement handlesLink;
 
+
+    //DROPPABLE
+    @FindBy(linkText = "Droppable")
+    private WebElement droppableLink;
     @FindBy(linkText = "Accept")
     private WebElement acceptLink;
     @FindBy(linkText = "Revert draggable position")
     private WebElement revertDraggablePositionLink;
+
+    //RESIZABLE
+    @FindBy(linkText = "Resizable")
+    private WebElement resizableLink;
     @FindBy(linkText = "Synchronus Resize")
     private WebElement synchronousResizeLink;
-
     @FindBy(linkText = "Textarea")
     private WebElement textAreaLink;
+
+    //SELECTABLE
+    @FindBy(linkText = "Selectable")
+    private WebElement selectableLink;
+    @FindBy(linkText = "Serialize")
+    private WebElement serializeLink;
+
+    //AUTOCOMPLETE
+    @FindBy(linkText = "Autocomplete")
+    private WebElement autocompleteLink;
+
+    //ALERTS
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
     @FindBy(linkText = "Alert Types")
     private WebElement alertTypesLink;
 
+    //IFRAME
+    @FindBy(linkText = "Iframe")
+    private WebElement iframeLink;
+    @FindBy(linkText = "Nested Iframe")
+    private WebElement nestedIframeLink;
+    @FindBy(linkText = "Normal Iframe")
+    private WebElement normalIframeLink;
+
+
     public void clickInarAcademyImageLink() {
         inarAcademyImage.click();
     }
 
+    //DRAGGABLE
     public void clickOnDraggableLink() {
         draggableLink.click();
+    }
+
+    public void clickOnAutoScrollingLink() {
+        autoScrollingLink.click();
     }
 
     public void clickOnDraggableDefaultFunctionalityLink() {
         defaultFunctionalityLink.click();
     }
 
+    public void clickHandlesLink() {
+        handlesLink.click();
+    }
+
+    public void clickConstrainMovementLink() {
+        constrainMovementLink.click();
+    }
+
+
+    //DROPPABLE
     public void clickOnDroppableDefaultFunctionalityLink() {
         defaultFunctionalityLink.click();
     }
@@ -77,10 +98,16 @@ public class WebAutomationPage extends BasePage {
         droppableLink.click();
     }
 
-    public void clickOnAutoScrollingLink() {
-        autoScrollingLink.click();
+    public void clickAcceptLink() {
+        acceptLink.click();
     }
 
+    public void clickRevertDraggablePosition() {
+        revertDraggablePositionLink.click();
+    }
+
+
+    //RESIZABLE
     public void clickOnResizableLink() {
         resizableLink.click();
     }
@@ -89,14 +116,48 @@ public class WebAutomationPage extends BasePage {
         defaultFunctionalityLink.click();
     }
 
+    public void clickSynchronousResizeLink() {
+        synchronousResizeLink.click();
+    }
+
+    public void clickTextAreaLink() {
+        textAreaLink.click();
+    }
+
+
+    //SELECTABLE
     public void clickOnSelectableLink() {
         selectableLink.click();
     }
 
-    public void clickOnDefaultFunctionality() {
+    public void clickSerializeLink() {
+        serializeLink.click();
+    }
+
+    public void clickOnSelectableDefaultFunctionality() {
         defaultFunctionalityLink.click();
     }
 
+    //AUTOCOMPLETE
+    public void clickOnAutocompleteLink(){
+        autocompleteLink.click();
+    }
+    public void clickOnAutocompleteDefaultFunctionality(){
+        defaultFunctionalityLink.click();
+    }
+
+
+    //ALERTS
+    public void clickAlertsLink() {
+        alertsLink.click();
+    }
+
+    public void clickAlertTypesLink() {
+        alertTypesLink.click();
+    }
+
+
+    //IFRAME
     public void clickOnIframeLink() {
         iframeLink.click();
     }
@@ -109,39 +170,5 @@ public class WebAutomationPage extends BasePage {
         normalIframeLink.click();
     }
 
-    public void clickSerializeLink() {
-        serializeLink.click();
-    }
 
-    public void clickConstrainMovementLink() {
-        constrainMovementLink.click();
-    }
-
-    public void clickHandlesLink() {
-        handlesLink.click();
-    }
-
-    public void clickAcceptLink() {
-        acceptLink.click();
-    }
-
-    public void clickRevertDraggablePosition() {
-        revertDraggablePositionLink.click();
-    }
-
-    public void clickSynchronousResizeLink() {
-        synchronousResizeLink.click();
-    }
-
-    public void clickTextAreaLink() {
-        textAreaLink.click();
-    }
-
-    public void clickAlertsLink() {
-        alertsLink.click();
-    }
-
-    public void clickAlertTypesLink() {
-        alertTypesLink.click();
-    }
 }

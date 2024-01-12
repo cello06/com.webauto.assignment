@@ -30,7 +30,7 @@ public class Selectable_DefFunc_Test extends Hooks {
         //3. Click on Selectable button
         //4. Click on Default Functionality button
         pages.getWebAutomationPage().clickOnSelectableLink();
-        pages.getWebAutomationPage().clickOnDefaultFunctionality();
+        pages.getWebAutomationPage().clickOnSelectableDefaultFunctionality();
 
         //5. Click on Item 5
         pages.getSelectableDefFuncPage().clickOnItemByIndex(5);
