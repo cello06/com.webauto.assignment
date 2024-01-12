@@ -47,6 +47,8 @@ public class WebAutomationPage extends BasePage {
     //AUTOCOMPLETE
     @FindBy(linkText = "Autocomplete")
     private WebElement autocompleteLink;
+    @FindBy(linkText = "Accent Folding")
+    private WebElement accentFoldingLink;
 
     //ALERTS
     @FindBy(linkText = "Alerts")
@@ -144,6 +146,9 @@ public class WebAutomationPage extends BasePage {
     }
     public void clickOnAutocompleteDefaultFunctionality(){
         defaultFunctionalityLink.click();
+    }
+    public void clickAccentFoldingLink(){
+        accentFoldingLink.click();
     }
 
 

@@ -3,6 +3,7 @@ package utils;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerttypes.AlertTypesPage;
+import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovementPage;
@@ -53,6 +54,7 @@ public class Pages {
 
         //AUTOCOMPLETE_TAB_PAGE
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
+    private AccentFoldingPage accentFoldingPage;
 
 
         //ALERTS_TAB_PAGE
@@ -63,6 +65,7 @@ public class Pages {
         homePage = new HomePage();
         //WEB_AUTOMATION_PAGE
         acceptPage = new AcceptPage();
+        accentFoldingPage = new AccentFoldingPage();
         alertTypesPage = new AlertTypesPage();
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrolling_Page();
@@ -152,6 +155,9 @@ public class Pages {
     }
     public AutocompleteDefaultFunctionalityPage getAutocompleteDefaultFunctionalityPage(){
         return autocompleteDefaultFunctionalityPage;
+    }
+    public AccentFoldingPage getAccentFoldingPage(){
+        return accentFoldingPage;
     }
 
 }

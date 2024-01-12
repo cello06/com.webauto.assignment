@@ -39,8 +39,8 @@ public class DefaultFunctionalityTest extends Hooks {
         assertFalse(autoCompleteBox.isEmpty(), "Box is empty!");
 
         //6. Verify that results under the box start with 'ja'
-        assertTrue(pages.getAutocompleteDefaultFunctionalityPage().checkAutocompleteBoxFunctionality("Ja", autoCompleteBox),
-                "Elements in box are not starting with 'Ja'");
+        boolean testCondition = pages.getAutocompleteDefaultFunctionalityPage().checkAutocompleteBoxFunctionality("Ja", autoCompleteBox);
+        assertTrue(testCondition, "Elements in box are not starting with 'Ja'");
     }
 
 }
