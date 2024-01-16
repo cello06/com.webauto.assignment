@@ -1,5 +1,6 @@
 package BaseTest;
 
+import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ public class Hooks {
 
     private static String browser = Driver.browser;
     protected static Pages pages = new Pages();
+    public SoftAssertions softAssertions = new SoftAssertions();
 
     @BeforeAll
     public static void setUp() {

@@ -50,6 +50,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
 
+    //MENU
+    @FindBy(linkText = "Menu")
+    private WebElement menuLink;
+    @FindBy(linkText = "Icons")
+    private WebElement iconsLink;
+
     //ALERTS
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
@@ -149,6 +155,14 @@ public class WebAutomationPage extends BasePage {
     }
     public void clickAccentFoldingLink(){
         accentFoldingLink.click();
+    }
+
+    //MENU
+    public void clickMenuLink(){
+        menuLink.click();
+    }
+    public void clickIconsLink(){
+        iconsLink.click();
     }
 
 

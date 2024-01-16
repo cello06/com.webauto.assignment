@@ -14,6 +14,7 @@ import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.RevertDraggablePositionPage;
 import pages.iframe.NestedIframePage;
 import pages.iframe.NormalIFramePage;
+import pages.menu.IconsPage;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.resizable.SynchronousResizePage;
 import pages.resizable.TextAreaPage;
@@ -44,9 +45,7 @@ public class Pages {
     private TextAreaPage textAreaPage;
 
         //SELECTABLE_TAB_PAGE
-    private NestedIframePage nestedIframePage;
 
-    private NormalIFramePage normalIFramePage;
 
     private Selectable_DefFunc_Page selectableDefFuncPage;
 
@@ -56,14 +55,23 @@ public class Pages {
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
     private AccentFoldingPage accentFoldingPage;
 
+        //MENU_TAB_PAGE
+    private IconsPage iconsPage;
+
 
         //ALERTS_TAB_PAGE
     private AlertTypesPage alertTypesPage;
+
+        //IFRAME_TAB_PAGE
+    private NestedIframePage nestedIframePage;
+
+    private NormalIFramePage normalIFramePage;
 
     public Pages() {
         //HOMEPAGE
         homePage = new HomePage();
         //WEB_AUTOMATION_PAGE
+        //Alphabetical order...
         acceptPage = new AcceptPage();
         accentFoldingPage = new AccentFoldingPage();
         alertTypesPage = new AlertTypesPage();
@@ -73,6 +81,7 @@ public class Pages {
         draggableDefFuncPage = new Draggable_DefFunc_Page();
         droppableDefFuncPage = new Droppable_DefFunc_Page();
         handlesPage = new HandlesPage();
+        iconsPage = new IconsPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
         selectableDefFuncPage = new Selectable_DefFunc_Page();
@@ -158,6 +167,9 @@ public class Pages {
     }
     public AccentFoldingPage getAccentFoldingPage(){
         return accentFoldingPage;
+    }
+    public IconsPage getIconsPage(){
+        return iconsPage;
     }
 
 }
