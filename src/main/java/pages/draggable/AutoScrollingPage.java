@@ -2,10 +2,9 @@ package pages.draggable;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.BasePage;
 import pages.WebAutomationPage;
 
-public class AutoScrolling_Page extends WebAutomationPage {
+public class AutoScrollingPage extends WebAutomationPage {
 
     @FindBy(id = "draggable2")
     private WebElement firstDraggable;

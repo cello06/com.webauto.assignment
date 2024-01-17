@@ -5,21 +5,22 @@ import pages.WebAutomationPage;
 import pages.alerttypes.AlertTypesPage;
 import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
-import pages.draggable.AutoScrolling_Page;
+import pages.datepicker.DisplayMultipleMonthsPage;
+import pages.draggable.AutoScrollingPage;
 import pages.draggable.ConstrainMovementPage;
-import pages.draggable.Draggable_DefFunc_Page;
+import pages.draggable.DraggableDefFuncPage;
 import pages.draggable.HandlesPage;
 import pages.droppable.AcceptPage;
-import pages.droppable.Droppable_DefFunc_Page;
+import pages.droppable.DroppableDefFuncPage;
 import pages.droppable.RevertDraggablePositionPage;
 import pages.iframe.NestedIframePage;
 import pages.iframe.NormalIFramePage;
 import pages.menu.IconsPage;
-import pages.progress_bar.DownloadDialog;
-import pages.resizable.Resizable_DefFunc_Page;
+import pages.progress_bar.DownloadDialogPage;
+import pages.resizable.ResizableDefFuncPage;
 import pages.resizable.SynchronousResizePage;
 import pages.resizable.TextAreaPage;
-import pages.selectable.Selectable_DefFunc_Page;
+import pages.selectable.SelectableDefFuncPage;
 import pages.selectable.SerializePage;
 
 public class Pages {
@@ -30,25 +31,25 @@ public class Pages {
     //WEB_AUTOMATION_PAGE
     private WebAutomationPage webAutomationPage;
         //DRAGGABLE_TAB_PAGE
-    private AutoScrolling_Page autoScrollingPage;
+    private AutoScrollingPage autoScrollingPage;
     private ConstrainMovementPage constrainMovementPage;
-    private Draggable_DefFunc_Page draggableDefFuncPage;
+    private DraggableDefFuncPage draggableDefFuncPage;
     private HandlesPage handlesPage;
 
         //DROPPABLE_TAB_PAGE
-    private Droppable_DefFunc_Page droppableDefFuncPage;
+    private DroppableDefFuncPage droppableDefFuncPage;
     private AcceptPage acceptPage;
     private RevertDraggablePositionPage revertDraggablePositionPage;
 
         //RESIZABLE_TAB_PAGE
-    private Resizable_DefFunc_Page resizableDefFuncPage;
+    private ResizableDefFuncPage resizableDefFuncPage;
     private SynchronousResizePage synchronousResizePage;
     private TextAreaPage textAreaPage;
 
         //SELECTABLE_TAB_PAGE
 
 
-    private Selectable_DefFunc_Page selectableDefFuncPage;
+    private SelectableDefFuncPage selectableDefFuncPage;
 
     private SerializePage serializePage;
 
@@ -56,11 +57,14 @@ public class Pages {
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
     private AccentFoldingPage accentFoldingPage;
 
+        //DATE_PICKER_TAB_PAGE
+    private DisplayMultipleMonthsPage displayMultipleMonthsPage;
+
         //MENU_TAB_PAGE
     private IconsPage iconsPage;
 
         //PROGRESS_BAR_TAB_PAGE
-    private DownloadDialog downloadDialogPage;
+    private DownloadDialogPage downloadDialogPage;
 
 
         //ALERTS_TAB_PAGE
@@ -80,19 +84,20 @@ public class Pages {
         accentFoldingPage = new AccentFoldingPage();
         alertTypesPage = new AlertTypesPage();
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
-        autoScrollingPage = new AutoScrolling_Page();
+        autoScrollingPage = new AutoScrollingPage();
         constrainMovementPage = new ConstrainMovementPage();
-        downloadDialogPage = new DownloadDialog();
-        draggableDefFuncPage = new Draggable_DefFunc_Page();
-        droppableDefFuncPage = new Droppable_DefFunc_Page();
+        displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
+        downloadDialogPage = new DownloadDialogPage();
+        draggableDefFuncPage = new DraggableDefFuncPage();
+        droppableDefFuncPage = new DroppableDefFuncPage();
         handlesPage = new HandlesPage();
         iconsPage = new IconsPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
-        selectableDefFuncPage = new Selectable_DefFunc_Page();
+        selectableDefFuncPage = new SelectableDefFuncPage();
         serializePage = new SerializePage();
         synchronousResizePage = new SynchronousResizePage();
-        resizableDefFuncPage = new Resizable_DefFunc_Page();
+        resizableDefFuncPage = new ResizableDefFuncPage();
         revertDraggablePositionPage = new RevertDraggablePositionPage();
         textAreaPage = new TextAreaPage();
         webAutomationPage = new WebAutomationPage();
@@ -108,23 +113,23 @@ public class Pages {
         return webAutomationPage;
     }
 
-    public Draggable_DefFunc_Page getDraggableDefFuncPage() {
+    public DraggableDefFuncPage getDraggableDefFuncPage() {
         return draggableDefFuncPage;
     }
 
-    public AutoScrolling_Page getAutoScrollingPage() {
+    public AutoScrollingPage getAutoScrollingPage() {
         return autoScrollingPage;
     }
 
-    public Droppable_DefFunc_Page getDroppableDefFuncPage() {
+    public DroppableDefFuncPage getDroppableDefFuncPage() {
         return droppableDefFuncPage;
     }
 
-    public Resizable_DefFunc_Page getResizableDefFuncPage() {
+    public ResizableDefFuncPage getResizableDefFuncPage() {
         return resizableDefFuncPage;
     }
 
-    public Selectable_DefFunc_Page getSelectableDefFuncPage() {
+    public SelectableDefFuncPage getSelectableDefFuncPage() {
         return selectableDefFuncPage;
     }
 
@@ -177,8 +182,7 @@ public class Pages {
         return iconsPage;
     }
 
-    public DownloadDialog getDownloadDialogPage(){
-        return downloadDialogPage;
-    }
+    public DownloadDialogPage getDownloadDialogPage(){return downloadDialogPage;}
+    public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage(){return displayMultipleMonthsPage;}
 
 }

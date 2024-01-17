@@ -2,10 +2,9 @@ package pages.droppable;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.BasePage;
 import pages.WebAutomationPage;
 
-public class Droppable_DefFunc_Page extends WebAutomationPage {
+public class DroppableDefFuncPage extends WebAutomationPage {
     @FindBy(id = "draggable-def-func")
     private WebElement draggableElement;
 

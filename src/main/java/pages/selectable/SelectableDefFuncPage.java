@@ -7,7 +7,7 @@ import pages.BasePage;
 
 import java.util.List;
 
-public class Selectable_DefFunc_Page extends BasePage {
+public class SelectableDefFuncPage extends BasePage {
     @FindBy(css = "#selectable-def-functionality > li")
     private List<WebElement> itemList;
 

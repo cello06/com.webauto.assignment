@@ -50,6 +50,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
 
+    //DATE PICKER
+    @FindBy(linkText = "Datepicker")
+    private WebElement datePickerLink;
+    @FindBy(linkText = "Display Multiple Months")
+    private WebElement displayMultipleMonthsLink;
+
     //MENU
     @FindBy(linkText = "Menu")
     private WebElement menuLink;
@@ -162,6 +168,10 @@ public class WebAutomationPage extends BasePage {
     public void clickAccentFoldingLink(){
         accentFoldingLink.click();
     }
+
+    //DATE PICKER
+    public void clickDatePickerLink(){datePickerLink.click();}
+    public void clickDisplayMultipleMonthsLink(){displayMultipleMonthsLink.click();}
 
     //MENU
     public void clickMenuLink(){

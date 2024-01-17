@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import pages.WebAutomationPage;
 import utils.BrowserUtils;
 
-public class DownloadDialog extends WebAutomationPage {
+public class DownloadDialogPage extends WebAutomationPage {
     @FindBy(id = "downloadButton-download-dialog")
     private WebElement startDownloadButton;
 
