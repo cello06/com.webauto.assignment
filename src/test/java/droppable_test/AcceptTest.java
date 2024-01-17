@@ -1,6 +1,6 @@
-package droppableTest;
+package droppable_test;
 
-import BaseTest.Hooks;
+import base_test.Hooks;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

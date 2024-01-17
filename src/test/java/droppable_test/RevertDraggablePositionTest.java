@@ -1,7 +1,6 @@
-package droppableTest;
+package droppable_test;
 
-import BaseTest.Hooks;
-import org.assertj.core.data.Offset;
+import base_test.Hooks;
 import org.junit.jupiter.api.Test;
 import utils.BrowserUtils;
 

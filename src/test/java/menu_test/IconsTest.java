@@ -1,7 +1,6 @@
-package menuTest;
+package menu_test;
 
-import BaseTest.Hooks;
-import org.assertj.core.api.Assert;
+import base_test.Hooks;
 import org.junit.jupiter.api.Test;
 import utils.BrowserUtils;
 

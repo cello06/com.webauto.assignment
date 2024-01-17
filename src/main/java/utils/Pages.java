@@ -15,6 +15,7 @@ import pages.droppable.RevertDraggablePositionPage;
 import pages.iframe.NestedIframePage;
 import pages.iframe.NormalIFramePage;
 import pages.menu.IconsPage;
+import pages.progress_bar.DownloadDialog;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.resizable.SynchronousResizePage;
 import pages.resizable.TextAreaPage;
@@ -58,6 +59,9 @@ public class Pages {
         //MENU_TAB_PAGE
     private IconsPage iconsPage;
 
+        //PROGRESS_BAR_TAB_PAGE
+    private DownloadDialog downloadDialogPage;
+
 
         //ALERTS_TAB_PAGE
     private AlertTypesPage alertTypesPage;
@@ -78,6 +82,7 @@ public class Pages {
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrolling_Page();
         constrainMovementPage = new ConstrainMovementPage();
+        downloadDialogPage = new DownloadDialog();
         draggableDefFuncPage = new Draggable_DefFunc_Page();
         droppableDefFuncPage = new Droppable_DefFunc_Page();
         handlesPage = new HandlesPage();
@@ -170,6 +175,10 @@ public class Pages {
     }
     public IconsPage getIconsPage(){
         return iconsPage;
+    }
+
+    public DownloadDialog getDownloadDialogPage(){
+        return downloadDialogPage;
     }
 
 }

@@ -56,6 +56,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Icons")
     private WebElement iconsLink;
 
+    //PROGRESS BAR
+    @FindBy(linkText = "Progress Bar")
+    private WebElement progressBarLink;
+    @FindBy(linkText = "Download Dialog")
+    private WebElement downloadDialogLink;
+
     //ALERTS
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
@@ -164,6 +170,10 @@ public class WebAutomationPage extends BasePage {
     public void clickIconsLink(){
         iconsLink.click();
     }
+
+    //PROGRESS BAR
+    public void clickOnProgressBarLink(){progressBarLink.click();}
+    public void clickDownloadDialogLink(){downloadDialogLink.click();}
 
 
     //ALERTS

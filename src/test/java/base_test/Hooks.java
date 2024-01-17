@@ -1,9 +1,8 @@
-package BaseTest;
+package base_test;
 
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.WebDriver;
 import utils.Driver;
 import utils.Pages;
 

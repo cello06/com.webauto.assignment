@@ -1,6 +1,6 @@
-package draggableTests;
+package draggable_tests;
 
-import BaseTest.Hooks;
+import base_test.Hooks;
 import org.junit.jupiter.api.Test;
 import utils.BrowserUtils;
 

@@ -1,6 +1,6 @@
-package alerttypeTest;
+package alert_type_test;
 
-import BaseTest.Hooks;
+import base_test.Hooks;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
