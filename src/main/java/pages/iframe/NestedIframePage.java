@@ -3,8 +3,9 @@ package pages.iframe;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class NestedIframePage extends BasePage {
+public class NestedIframePage extends WebAutomationPage {
 
     @FindBy(css = "h1")
     private WebElement headerInFrame;

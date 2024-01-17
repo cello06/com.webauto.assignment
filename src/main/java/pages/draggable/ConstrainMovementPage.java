@@ -3,8 +3,9 @@ package pages.draggable;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class ConstrainMovementPage extends BasePage {
+public class ConstrainMovementPage extends WebAutomationPage {
     @FindBy(id = "draggable5")
     private WebElement verticallyDraggableElement;
 

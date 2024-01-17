@@ -3,8 +3,9 @@ package pages.resizable;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class SynchronousResizePage extends BasePage {
+public class SynchronousResizePage extends WebAutomationPage {
     @FindBy(id = "resizable-synchr-resize")
     private WebElement firstResizableElement;
 

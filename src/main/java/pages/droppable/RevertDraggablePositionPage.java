@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 import pages.WebAutomationPage;
 
-public class RevertDraggablePositionPage extends BasePage {
+public class RevertDraggablePositionPage extends WebAutomationPage {
     @FindBy(id = "draggable-revert-draggable")
     private WebElement revertWhenDroppedElement;
 

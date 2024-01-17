@@ -3,8 +3,9 @@ package pages.draggable;
 import pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pages.WebAutomationPage;
 
-public class Draggable_DefFunc_Page extends BasePage {
+public class Draggable_DefFunc_Page extends WebAutomationPage {
 
     @FindBy(id = "draggable")
     private WebElement draggable;

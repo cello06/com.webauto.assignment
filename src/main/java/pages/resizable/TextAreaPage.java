@@ -3,8 +3,9 @@ package pages.resizable;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class TextAreaPage extends BasePage {
+public class TextAreaPage extends WebAutomationPage {
     @FindBy(css = ".ui-wrapper > .ui-resizable-handle:nth-child(4)")
     private WebElement handleOfTextAreaForResizing;
 

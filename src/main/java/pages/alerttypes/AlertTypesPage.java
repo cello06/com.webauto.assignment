@@ -4,8 +4,9 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class AlertTypesPage extends BasePage {
+public class AlertTypesPage extends WebAutomationPage {
     @FindBy(xpath = "//button[text()='Show Alert']")
     private WebElement showAlertButtonElement;
 

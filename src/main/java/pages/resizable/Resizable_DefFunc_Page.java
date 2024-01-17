@@ -3,8 +3,9 @@ package pages.resizable;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class Resizable_DefFunc_Page extends BasePage {
+public class Resizable_DefFunc_Page extends WebAutomationPage {
     @FindBy(id = "resizable-1")
     private WebElement resizableElement;
 

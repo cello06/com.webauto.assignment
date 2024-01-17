@@ -3,11 +3,12 @@ package pages.autocomplete;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class AutocompleteDefaultFunctionalityPage extends BasePage {
+public class AutocompleteDefaultFunctionalityPage extends WebAutomationPage {
     @FindBy(id = "tags-def-func")
     private WebElement textBox;
 

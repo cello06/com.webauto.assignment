@@ -3,12 +3,13 @@ package pages.menu;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 import utils.BrowserUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IconsPage extends BasePage {
+public class IconsPage extends WebAutomationPage {
     @FindBy(css = "#menu-w-icons > li > div")
     private List<WebElement> elementsInMenuBox;
 

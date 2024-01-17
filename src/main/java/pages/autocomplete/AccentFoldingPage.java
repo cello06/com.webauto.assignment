@@ -3,11 +3,12 @@ package pages.autocomplete;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class AccentFoldingPage extends BasePage {
+public class AccentFoldingPage extends WebAutomationPage {
 
     @FindBy(id = "developer-accentFolding")
     private WebElement textBox;

@@ -3,8 +3,9 @@ package pages.droppable;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
+import pages.WebAutomationPage;
 
-public class AcceptPage  extends BasePage {
+public class AcceptPage  extends WebAutomationPage {
     @FindBy(id = "draggable-nonvalid-accept")
     private WebElement draggableButNotDroppableElement;
 
