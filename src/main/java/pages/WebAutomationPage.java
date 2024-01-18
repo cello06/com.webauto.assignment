@@ -55,6 +55,8 @@ public class WebAutomationPage extends BasePage {
     private WebElement datePickerLink;
     @FindBy(linkText = "Display Multiple Months")
     private WebElement displayMultipleMonthsLink;
+    @FindBy(linkText = "Select Date Range")
+    private WebElement selectDateRangeLink;
 
     //MENU
     @FindBy(linkText = "Menu")
@@ -172,6 +174,8 @@ public class WebAutomationPage extends BasePage {
     //DATE PICKER
     public void clickDatePickerLink(){datePickerLink.click();}
     public void clickDisplayMultipleMonthsLink(){displayMultipleMonthsLink.click();}
+    public void clickSelectDateRangeLink(){selectDateRangeLink.click();}
+
 
     //MENU
     public void clickMenuLink(){

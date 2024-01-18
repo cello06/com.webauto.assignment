@@ -4,7 +4,6 @@ import base_test.Hooks;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pages.BasePage;
 import utils.BrowserUtils;
 
 import java.time.LocalDate;
@@ -106,6 +105,7 @@ public class DisplayMultipleMonthsTest extends Hooks {
 
         assertEquals(expectedTodayDate, actualTodayDate, "Date is wrongly displayed!");
     }
+
     @AfterEach
     void tearDownTestEnvironment() {
         //Return To Home Page

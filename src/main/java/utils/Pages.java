@@ -6,6 +6,7 @@ import pages.alerttypes.AlertTypesPage;
 import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
 import pages.datepicker.DisplayMultipleMonthsPage;
+import pages.datepicker.SelectDateRateTest;
 import pages.draggable.AutoScrollingPage;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.DraggableDefFuncPage;
@@ -59,6 +60,7 @@ public class Pages {
 
         //DATE_PICKER_TAB_PAGE
     private DisplayMultipleMonthsPage displayMultipleMonthsPage;
+    private SelectDateRateTest selectDateRateTest;
 
         //MENU_TAB_PAGE
     private IconsPage iconsPage;
@@ -95,6 +97,7 @@ public class Pages {
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
         selectableDefFuncPage = new SelectableDefFuncPage();
+        selectDateRateTest = new SelectDateRateTest();
         serializePage = new SerializePage();
         synchronousResizePage = new SynchronousResizePage();
         resizableDefFuncPage = new ResizableDefFuncPage();
@@ -184,5 +187,6 @@ public class Pages {
 
     public DownloadDialogPage getDownloadDialogPage(){return downloadDialogPage;}
     public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage(){return displayMultipleMonthsPage;}
+    public SelectDateRateTest getSelectDateRateTest(){return selectDateRateTest;}
 
 }
