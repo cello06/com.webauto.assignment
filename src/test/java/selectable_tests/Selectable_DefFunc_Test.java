@@ -1,4 +1,4 @@
-package selectable_test;
+package selectable_tests;
 
 import base_test.Hooks;
 import org.assertj.core.api.Assertions;

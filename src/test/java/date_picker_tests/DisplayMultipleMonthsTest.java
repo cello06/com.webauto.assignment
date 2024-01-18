@@ -1,4 +1,4 @@
-package date_picker_test;
+package date_picker_tests;
 
 import base_test.Hooks;
 import org.junit.jupiter.api.AfterEach;

@@ -1,4 +1,4 @@
-package progress_bar_test;
+package progress_bar_tests;
 
 import base_test.Hooks;
 import org.junit.jupiter.api.Test;

@@ -5,6 +5,7 @@ import pages.WebAutomationPage;
 import pages.alerttypes.AlertTypesPage;
 import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
+import pages.control_group.ToolbarPage;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.datepicker.SelectDateRateTest;
 import pages.draggable.AutoScrollingPage;
@@ -58,6 +59,9 @@ public class Pages {
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
     private AccentFoldingPage accentFoldingPage;
 
+        //CONTROL_GROUP_TAB_PAGE
+    private ToolbarPage toolbarPage;
+
         //DATE_PICKER_TAB_PAGE
     private DisplayMultipleMonthsPage displayMultipleMonthsPage;
     private SelectDateRateTest selectDateRateTest;
@@ -103,6 +107,7 @@ public class Pages {
         resizableDefFuncPage = new ResizableDefFuncPage();
         revertDraggablePositionPage = new RevertDraggablePositionPage();
         textAreaPage = new TextAreaPage();
+        toolbarPage = new ToolbarPage();
         webAutomationPage = new WebAutomationPage();
 
     }
@@ -184,9 +189,9 @@ public class Pages {
     public IconsPage getIconsPage(){
         return iconsPage;
     }
-
     public DownloadDialogPage getDownloadDialogPage(){return downloadDialogPage;}
     public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage(){return displayMultipleMonthsPage;}
     public SelectDateRateTest getSelectDateRateTest(){return selectDateRateTest;}
+    public ToolbarPage getToolbarPage(){return toolbarPage;}
 
 }

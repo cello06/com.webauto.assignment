@@ -50,6 +50,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
 
+    //CONTROL GROUP
+    @FindBy(linkText = "Control Group")
+    private WebElement controlGroupLink;
+    @FindBy(linkText = "Toolbar")
+    private WebElement toolbarLink;
+
     //DATE PICKER
     @FindBy(linkText = "Datepicker")
     private WebElement datePickerLink;
@@ -170,6 +176,10 @@ public class WebAutomationPage extends BasePage {
     public void clickAccentFoldingLink(){
         accentFoldingLink.click();
     }
+
+    //CONTROL GROUP
+    public void clickOnControlGroupLink(){controlGroupLink.click();}
+    public void clickToolbarLink(){toolbarLink.click();}
 
     //DATE PICKER
     public void clickDatePickerLink(){datePickerLink.click();}

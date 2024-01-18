@@ -1,4 +1,4 @@
-package resizable_test;
+package resizable_tests;
 
 import base_test.Hooks;
 import org.junit.jupiter.api.Test;

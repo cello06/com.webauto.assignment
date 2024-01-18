@@ -1,4 +1,4 @@
-package droppable_test;
+package droppable_tests;
 
 import base_test.Hooks;
 import org.assertj.core.api.Assertions;

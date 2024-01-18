@@ -1,4 +1,4 @@
-package iframe_test;
+package iframe_tests;
 
 import base_test.Hooks;
 import org.junit.jupiter.api.Test;

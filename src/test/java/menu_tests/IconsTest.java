@@ -1,4 +1,4 @@
-package menu_test;
+package menu_tests;
 
 import base_test.Hooks;
 import org.junit.jupiter.api.Test;
