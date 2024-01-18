@@ -8,6 +8,7 @@ import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
 import pages.control_group.ToolbarPage;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.datepicker.SelectDateRateTest;
+import pages.dialog.ModelFormPage;
 import pages.draggable.AutoScrollingPage;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.DraggableDefFuncPage;
@@ -66,6 +67,9 @@ public class Pages {
     private DisplayMultipleMonthsPage displayMultipleMonthsPage;
     private SelectDateRateTest selectDateRateTest;
 
+        //DIALOG_TAB_PAGE
+    private ModelFormPage modelFormPage;
+
         //MENU_TAB_PAGE
     private IconsPage iconsPage;
 
@@ -98,6 +102,7 @@ public class Pages {
         droppableDefFuncPage = new DroppableDefFuncPage();
         handlesPage = new HandlesPage();
         iconsPage = new IconsPage();
+        modelFormPage = new ModelFormPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
         selectableDefFuncPage = new SelectableDefFuncPage();
@@ -193,5 +198,5 @@ public class Pages {
     public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage(){return displayMultipleMonthsPage;}
     public SelectDateRateTest getSelectDateRateTest(){return selectDateRateTest;}
     public ToolbarPage getToolbarPage(){return toolbarPage;}
-
+    public ModelFormPage getModelFormPage() {return modelFormPage;}
 }

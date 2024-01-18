@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.BrowserUtils;
 
 public class WebAutomationPage extends BasePage {
 
@@ -63,6 +64,12 @@ public class WebAutomationPage extends BasePage {
     private WebElement displayMultipleMonthsLink;
     @FindBy(linkText = "Select Date Range")
     private WebElement selectDateRangeLink;
+
+    //DIALOG
+    @FindBy(linkText = "Dialog")
+    private WebElement dialogLink;
+    @FindBy(linkText = "Modal Form")
+    private WebElement modelFormLink;
 
     //MENU
     @FindBy(linkText = "Menu")
@@ -167,37 +174,65 @@ public class WebAutomationPage extends BasePage {
     }
 
     //AUTOCOMPLETE
-    public void clickOnAutocompleteLink(){
+    public void clickOnAutocompleteLink() {
         autocompleteLink.click();
     }
-    public void clickOnAutocompleteDefaultFunctionality(){
+
+    public void clickOnAutocompleteDefaultFunctionality() {
         defaultFunctionalityLink.click();
     }
-    public void clickAccentFoldingLink(){
+
+    public void clickAccentFoldingLink() {
         accentFoldingLink.click();
     }
 
     //CONTROL GROUP
-    public void clickOnControlGroupLink(){controlGroupLink.click();}
-    public void clickToolbarLink(){toolbarLink.click();}
+    public void clickOnControlGroupLink() {
+        controlGroupLink.click();
+    }
+
+    public void clickToolbarLink() {
+        toolbarLink.click();
+    }
 
     //DATE PICKER
-    public void clickDatePickerLink(){datePickerLink.click();}
-    public void clickDisplayMultipleMonthsLink(){displayMultipleMonthsLink.click();}
-    public void clickSelectDateRangeLink(){selectDateRangeLink.click();}
+    public void clickDatePickerLink() {
+        datePickerLink.click();
+    }
 
+    public void clickDisplayMultipleMonthsLink() {
+        displayMultipleMonthsLink.click();
+    }
+
+    public void clickSelectDateRangeLink() {
+        selectDateRangeLink.click();
+    }
+
+    //DIALOG
+    public void clickDialogLink() {
+        dialogLink.click();
+    }
+    public void clickModelFormLink() {
+        modelFormLink.click();
+    }
 
     //MENU
-    public void clickMenuLink(){
+    public void clickMenuLink() {
         menuLink.click();
     }
-    public void clickIconsLink(){
+
+    public void clickIconsLink() {
         iconsLink.click();
     }
 
     //PROGRESS BAR
-    public void clickOnProgressBarLink(){progressBarLink.click();}
-    public void clickDownloadDialogLink(){downloadDialogLink.click();}
+    public void clickOnProgressBarLink() {
+        progressBarLink.click();
+    }
+
+    public void clickDownloadDialogLink() {
+        downloadDialogLink.click();
+    }
 
 
     //ALERTS

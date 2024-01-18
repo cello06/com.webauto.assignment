@@ -20,6 +20,7 @@ public class BrowserUtils {
         actions.keyDown(Keys.PAGE_UP).release().build().perform();
     }
 
+
     public static void wait(double timeout){
         try{
             Thread.sleep((long)timeout * 1000);
