@@ -16,7 +16,7 @@ public class DownloadDialogTest extends Hooks {
      * 5.Click on start download button
      * 6.Verify that text on the start download button changed into 'Downloading...'
      * 7.Click cancel download button
-     * 8.7.Verify that text on the start download button turned into initial state
+     * 8.Verify that text on the start download button turned into initial state
      */
     @Test
     void startDownloadButtonFunctionality(){
