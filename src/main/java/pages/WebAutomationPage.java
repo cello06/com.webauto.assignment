@@ -83,6 +83,13 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Download Dialog")
     private WebElement downloadDialogLink;
 
+
+    //SLIDER
+    @FindBy(linkText = "Slider")
+    private WebElement sliderLink;
+    @FindBy(linkText = "Snap to increments")
+    private WebElement snapToIncrementsLink;
+
     //ALERTS
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
@@ -233,6 +240,11 @@ public class WebAutomationPage extends BasePage {
     public void clickDownloadDialogLink() {
         downloadDialogLink.click();
     }
+
+
+    //SLIDER
+    public void clickSliderLink(){sliderLink.click();}
+    public void clickSnapToIncrement(){snapToIncrementsLink.click();}
 
 
     //ALERTS

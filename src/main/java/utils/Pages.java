@@ -25,6 +25,7 @@ import pages.resizable.SynchronousResizePage;
 import pages.resizable.TextAreaPage;
 import pages.selectable.SelectableDefFuncPage;
 import pages.selectable.SerializePage;
+import pages.slider.SnapToIncrementsPage;
 
 public class Pages {
 
@@ -76,6 +77,9 @@ public class Pages {
         //PROGRESS_BAR_TAB_PAGE
     private DownloadDialogPage downloadDialogPage;
 
+        //SLIDER_TAB_PAGE
+    private SnapToIncrementsPage snapToIncrementsPage;
+
 
         //ALERTS_TAB_PAGE
     private AlertTypesPage alertTypesPage;
@@ -108,6 +112,7 @@ public class Pages {
         selectableDefFuncPage = new SelectableDefFuncPage();
         selectDateRateTest = new SelectDateRateTest();
         serializePage = new SerializePage();
+        snapToIncrementsPage = new SnapToIncrementsPage();
         synchronousResizePage = new SynchronousResizePage();
         resizableDefFuncPage = new ResizableDefFuncPage();
         revertDraggablePositionPage = new RevertDraggablePositionPage();
@@ -199,4 +204,5 @@ public class Pages {
     public SelectDateRateTest getSelectDateRateTest(){return selectDateRateTest;}
     public ToolbarPage getToolbarPage(){return toolbarPage;}
     public ModelFormPage getModelFormPage() {return modelFormPage;}
+    public SnapToIncrementsPage getSnapToIncrementsPage(){return snapToIncrementsPage;}
 }
