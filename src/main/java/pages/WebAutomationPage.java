@@ -90,6 +90,13 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Snap to increments")
     private WebElement snapToIncrementsLink;
 
+    //SPINNER
+    @FindBy(linkText = "Spinner")
+    private WebElement spinnerLink;
+    @FindBy(linkText = "Spinner Overflow")
+    private WebElement spinnerOverflowLink;
+
+
     //ALERTS
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
@@ -245,6 +252,11 @@ public class WebAutomationPage extends BasePage {
     //SLIDER
     public void clickSliderLink(){sliderLink.click();}
     public void clickSnapToIncrement(){snapToIncrementsLink.click();}
+
+    //SPINNER
+    public void clickSpinnerLink(){spinnerLink.click();}
+    public void clickSpinnerOverflowLink(){spinnerOverflowLink.click();}
+
 
 
     //ALERTS

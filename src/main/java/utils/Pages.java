@@ -26,6 +26,7 @@ import pages.resizable.TextAreaPage;
 import pages.selectable.SelectableDefFuncPage;
 import pages.selectable.SerializePage;
 import pages.slider.SnapToIncrementsPage;
+import pages.spinner.SpinnerOverflow;
 
 public class Pages {
 
@@ -80,6 +81,9 @@ public class Pages {
         //SLIDER_TAB_PAGE
     private SnapToIncrementsPage snapToIncrementsPage;
 
+        //SPINNER_TAB_PAGE
+    private SpinnerOverflow spinnerOverflow;
+
 
         //ALERTS_TAB_PAGE
     private AlertTypesPage alertTypesPage;
@@ -113,6 +117,7 @@ public class Pages {
         selectDateRateTest = new SelectDateRateTest();
         serializePage = new SerializePage();
         snapToIncrementsPage = new SnapToIncrementsPage();
+        spinnerOverflow = new SpinnerOverflow();
         synchronousResizePage = new SynchronousResizePage();
         resizableDefFuncPage = new ResizableDefFuncPage();
         revertDraggablePositionPage = new RevertDraggablePositionPage();
@@ -190,9 +195,7 @@ public class Pages {
     public AlertTypesPage getAlertTypesPage() {
         return alertTypesPage;
     }
-    public AutocompleteDefaultFunctionalityPage getAutocompleteDefaultFunctionalityPage(){
-        return autocompleteDefaultFunctionalityPage;
-    }
+    public AutocompleteDefaultFunctionalityPage getAutocompleteDefaultFunctionalityPage(){return autocompleteDefaultFunctionalityPage;}
     public AccentFoldingPage getAccentFoldingPage(){
         return accentFoldingPage;
     }
@@ -205,4 +208,5 @@ public class Pages {
     public ToolbarPage getToolbarPage(){return toolbarPage;}
     public ModelFormPage getModelFormPage() {return modelFormPage;}
     public SnapToIncrementsPage getSnapToIncrementsPage(){return snapToIncrementsPage;}
+    public SpinnerOverflow getSpinnerOverflow(){return spinnerOverflow;}
 }
