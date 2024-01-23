@@ -26,6 +26,7 @@ import pages.resizable.TextAreaPage;
 import pages.selectable.SelectableDefFuncPage;
 import pages.selectable.SerializePage;
 import pages.slider.SnapToIncrementsPage;
+import pages.sortable.DisplayAsGridPage;
 import pages.spinner.SpinnerOverflow;
 
 public class Pages {
@@ -51,12 +52,14 @@ public class Pages {
     private SynchronousResizePage synchronousResizePage;
     private TextAreaPage textAreaPage;
 
+
         //SELECTABLE_TAB_PAGE
-
-
     private SelectableDefFuncPage selectableDefFuncPage;
 
     private SerializePage serializePage;
+
+        //SORTABLE_TAB_PAGE
+    private DisplayAsGridPage displayAsGridPage;
 
         //AUTOCOMPLETE_TAB_PAGE
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
@@ -104,6 +107,7 @@ public class Pages {
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrollingPage();
         constrainMovementPage = new ConstrainMovementPage();
+        displayAsGridPage = new DisplayAsGridPage();
         displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
         downloadDialogPage = new DownloadDialogPage();
         draggableDefFuncPage = new DraggableDefFuncPage();
@@ -209,4 +213,5 @@ public class Pages {
     public ModelFormPage getModelFormPage() {return modelFormPage;}
     public SnapToIncrementsPage getSnapToIncrementsPage(){return snapToIncrementsPage;}
     public SpinnerOverflow getSpinnerOverflow(){return spinnerOverflow;}
+    public DisplayAsGridPage getDisplayAsGridPage(){return displayAsGridPage;}
 }

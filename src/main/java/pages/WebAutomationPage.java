@@ -45,6 +45,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Serialize")
     private WebElement serializeLink;
 
+    //SORTABLE
+    @FindBy(linkText = "Sortable")
+    private WebElement sortableLink;
+    @FindBy(linkText = "Display as Grid")
+    private WebElement displayAsGrid;
+
     //AUTOCOMPLETE
     @FindBy(linkText = "Autocomplete")
     private WebElement autocompleteLink;
@@ -281,6 +287,10 @@ public class WebAutomationPage extends BasePage {
     public void clickOnNormalIframe() {
         normalIframeLink.click();
     }
+
+    public void clickSortableLink(){sortableLink.click();}
+
+    public void clickDisplayAsGridLink(){displayAsGrid.click();}
 
 
 }

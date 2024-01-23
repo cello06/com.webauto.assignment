@@ -19,7 +19,7 @@ public class SpinnerOverflowTest extends Hooks {
      * 10. Verify that when you click down while value is -10, value equals to 10
      */
     @Test
-    void testSpinnerOverflowFunctionality(){
+    void testSpinnerOverflowFunctionality() {
         //1. Open the browser and navigate to the URL
         //2. Click on Web automation link
         pages.getHomePage().clickOnWebAutomationLink();
@@ -37,7 +37,7 @@ public class SpinnerOverflowTest extends Hooks {
 
         //6. Click up button until value equals to 10
         int clickCountToMakeValueTen = 10 - initialValueOnTextBox;
-        pages.getSpinnerOverflow().clickOnButtonAccordingToParameter("up",clickCountToMakeValueTen);
+        pages.getSpinnerOverflow().clickOnButtonAccordingToParameter("up", clickCountToMakeValueTen);
 
         //7. Verify that value is 10
         int currentValue = pages.getSpinnerOverflow().getValueInTheText();
