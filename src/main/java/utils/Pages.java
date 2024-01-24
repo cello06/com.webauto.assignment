@@ -2,6 +2,7 @@ package utils;
 
 import pages.HomePage;
 import pages.WebAutomationPage;
+import pages.accordion.CollapseContentPage;
 import pages.alerttypes.AlertTypesPage;
 import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
@@ -63,6 +64,9 @@ public class Pages {
     private DisplayAsGridPage displayAsGridPage;
     private IncludeExcludeItemsPage includeExcludeItemsPage;
 
+        //ACCORDION_TAB_PAGE
+    private CollapseContentPage collapseContentPage;
+
         //AUTOCOMPLETE_TAB_PAGE
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
     private AccentFoldingPage accentFoldingPage;
@@ -108,6 +112,7 @@ public class Pages {
         alertTypesPage = new AlertTypesPage();
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrollingPage();
+        collapseContentPage = new CollapseContentPage();
         constrainMovementPage = new ConstrainMovementPage();
         displayAsGridPage = new DisplayAsGridPage();
         displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
@@ -218,4 +223,5 @@ public class Pages {
     public SpinnerOverflow getSpinnerOverflow(){return spinnerOverflow;}
     public DisplayAsGridPage getDisplayAsGridPage(){return displayAsGridPage;}
     public IncludeExcludeItemsPage getIncludeExcludeItemsPage(){return includeExcludeItemsPage;}
+    public CollapseContentPage getCollapseContentPage(){return collapseContentPage;}
 }

@@ -53,6 +53,13 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Include / exclude items")
     private WebElement includeExcludeItemsLink;
 
+    //ACCORDION
+    @FindBy(linkText = "Accordion")
+    private WebElement accordionLink;
+    @FindBy(linkText = "Collapse Content")
+    private WebElement collapseContentLink;
+
+
     //AUTOCOMPLETE
     @FindBy(linkText = "Autocomplete")
     private WebElement autocompleteLink;
@@ -201,6 +208,9 @@ public class WebAutomationPage extends BasePage {
     public void clickDisplayAsGridLink(){displayAsGrid.click();}
     public void clickIncludeExcludeItems(){includeExcludeItemsLink.click();}
 
+    //ACCORDION
+    public void clickAccordionLink(){accordionLink.click();}
+    public void clickCollapseContend(){collapseContentLink.click();}
 
 
     //AUTOCOMPLETE
