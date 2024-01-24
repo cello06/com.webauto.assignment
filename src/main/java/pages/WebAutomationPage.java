@@ -72,6 +72,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "With Icon")
     private WebElement withIconLink;
 
+    //CHECKBOX_RADIO
+    @FindBy(linkText = "Checkbox Radio")
+    private WebElement checkboxRadioLink;
+    @FindBy(linkText = "Product Selector")
+    private WebElement productSelectorLink;
+
     //CONTROL GROUP
     @FindBy(linkText = "Control Group")
     private WebElement controlGroupLink;
@@ -235,6 +241,11 @@ public class WebAutomationPage extends BasePage {
     //BUTTON
     public void clickButtonDefaultFunctionality(){defaultFunctionalityLink.click();}
     public void clickWithIconLink(){withIconLink.click();}
+
+    //CHECKBOX_BOX
+    public void clickCheckboxRadioLink(){checkboxRadioLink.click();}
+    public void clickProductSelectorLink(){productSelectorLink.click();}
+
 
     //CONTROL GROUP
     public void clickOnControlGroupLink() {

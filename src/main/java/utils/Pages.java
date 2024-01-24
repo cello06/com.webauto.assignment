@@ -8,6 +8,7 @@ import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
 import pages.button.ButtonDefFuncPage;
 import pages.button.WithIconPage;
+import pages.checkbox_radio.ProductSelectorPage;
 import pages.control_group.ToolbarPage;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.datepicker.SelectDateRateTest;
@@ -77,6 +78,9 @@ public class Pages {
     private ButtonDefFuncPage buttonDefFuncPage;
     private WithIconPage withIconPage;
 
+        //CHECKBOX_RADIO_TAB_PAGE
+    private ProductSelectorPage productSelectorPage;
+
         //CONTROL_GROUP_TAB_PAGE
     private ToolbarPage toolbarPage;
 
@@ -132,6 +136,7 @@ public class Pages {
         modelFormPage = new ModelFormPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
+        productSelectorPage = new ProductSelectorPage();
         selectableDefFuncPage = new SelectableDefFuncPage();
         selectDateRateTest = new SelectDateRateTest();
         serializePage = new SerializePage();
@@ -234,4 +239,5 @@ public class Pages {
     public CollapseContentPage getCollapseContentPage(){return collapseContentPage;}
     public ButtonDefFuncPage getButtonDefFuncPage(){return buttonDefFuncPage;}
     public WithIconPage getWithIconPage(){return withIconPage;}
+    public ProductSelectorPage getProductSelectorPage(){return productSelectorPage;}
 }
