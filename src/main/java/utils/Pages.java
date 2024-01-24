@@ -6,6 +6,8 @@ import pages.accordion.CollapseContentPage;
 import pages.alerttypes.AlertTypesPage;
 import pages.autocomplete.AccentFoldingPage;
 import pages.autocomplete.AutocompleteDefaultFunctionalityPage;
+import pages.button.ButtonDefFuncPage;
+import pages.button.WithIconPage;
 import pages.control_group.ToolbarPage;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.datepicker.SelectDateRateTest;
@@ -71,6 +73,10 @@ public class Pages {
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
     private AccentFoldingPage accentFoldingPage;
 
+        //BUTTON_TAB_PAGE
+    private ButtonDefFuncPage buttonDefFuncPage;
+    private WithIconPage withIconPage;
+
         //CONTROL_GROUP_TAB_PAGE
     private ToolbarPage toolbarPage;
 
@@ -112,6 +118,7 @@ public class Pages {
         alertTypesPage = new AlertTypesPage();
         autocompleteDefaultFunctionalityPage = new AutocompleteDefaultFunctionalityPage();
         autoScrollingPage = new AutoScrollingPage();
+        buttonDefFuncPage = new ButtonDefFuncPage();
         collapseContentPage = new CollapseContentPage();
         constrainMovementPage = new ConstrainMovementPage();
         displayAsGridPage = new DisplayAsGridPage();
@@ -136,6 +143,7 @@ public class Pages {
         textAreaPage = new TextAreaPage();
         toolbarPage = new ToolbarPage();
         webAutomationPage = new WebAutomationPage();
+        withIconPage = new WithIconPage();
 
     }
     //HOMEPAGE
@@ -224,4 +232,6 @@ public class Pages {
     public DisplayAsGridPage getDisplayAsGridPage(){return displayAsGridPage;}
     public IncludeExcludeItemsPage getIncludeExcludeItemsPage(){return includeExcludeItemsPage;}
     public CollapseContentPage getCollapseContentPage(){return collapseContentPage;}
+    public ButtonDefFuncPage getButtonDefFuncPage(){return buttonDefFuncPage;}
+    public WithIconPage getWithIconPage(){return withIconPage;}
 }

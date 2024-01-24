@@ -66,6 +66,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
 
+    //BUTTON
+    @FindBy(linkText = "Button")
+    private WebElement buttonLink;
+    @FindBy(linkText = "With Icon")
+    private WebElement withIconLink;
+
     //CONTROL GROUP
     @FindBy(linkText = "Control Group")
     private WebElement controlGroupLink;
@@ -225,6 +231,10 @@ public class WebAutomationPage extends BasePage {
     public void clickAccentFoldingLink() {
         accentFoldingLink.click();
     }
+
+    //BUTTON
+    public void clickButtonDefaultFunctionality(){defaultFunctionalityLink.click();}
+    public void clickWithIconLink(){withIconLink.click();}
 
     //CONTROL GROUP
     public void clickOnControlGroupLink() {
