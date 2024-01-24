@@ -50,6 +50,8 @@ public class WebAutomationPage extends BasePage {
     private WebElement sortableLink;
     @FindBy(linkText = "Display as Grid")
     private WebElement displayAsGrid;
+    @FindBy(linkText = "Include / exclude items")
+    private WebElement includeExcludeItemsLink;
 
     //AUTOCOMPLETE
     @FindBy(linkText = "Autocomplete")
@@ -193,6 +195,14 @@ public class WebAutomationPage extends BasePage {
         defaultFunctionalityLink.click();
     }
 
+    //SORTABLE
+    public void clickSortableLink(){sortableLink.click();}
+
+    public void clickDisplayAsGridLink(){displayAsGrid.click();}
+    public void clickIncludeExcludeItems(){includeExcludeItemsLink.click();}
+
+
+
     //AUTOCOMPLETE
     public void clickOnAutocompleteLink() {
         autocompleteLink.click();
@@ -288,9 +298,7 @@ public class WebAutomationPage extends BasePage {
         normalIframeLink.click();
     }
 
-    public void clickSortableLink(){sortableLink.click();}
 
-    public void clickDisplayAsGridLink(){displayAsGrid.click();}
 
 
 }

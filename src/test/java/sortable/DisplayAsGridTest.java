@@ -43,7 +43,7 @@ public class DisplayAsGridTest extends Hooks {
         String finalArrangement = pages.getDisplayAsGridPage().lineageOfNumbers();
 
         Assertions.assertThat(finalArrangement).as("Arrangement is not changed!").isNotEqualTo(expectedLocation);
-        
+
 
     }
 }

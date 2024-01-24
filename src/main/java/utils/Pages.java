@@ -27,6 +27,7 @@ import pages.selectable.SelectableDefFuncPage;
 import pages.selectable.SerializePage;
 import pages.slider.SnapToIncrementsPage;
 import pages.sortable.DisplayAsGridPage;
+import pages.sortable.IncludeExcludeItemsPage;
 import pages.spinner.SpinnerOverflow;
 
 public class Pages {
@@ -60,6 +61,7 @@ public class Pages {
 
         //SORTABLE_TAB_PAGE
     private DisplayAsGridPage displayAsGridPage;
+    private IncludeExcludeItemsPage includeExcludeItemsPage;
 
         //AUTOCOMPLETE_TAB_PAGE
     private AutocompleteDefaultFunctionalityPage autocompleteDefaultFunctionalityPage;
@@ -114,6 +116,7 @@ public class Pages {
         droppableDefFuncPage = new DroppableDefFuncPage();
         handlesPage = new HandlesPage();
         iconsPage = new IconsPage();
+        includeExcludeItemsPage = new IncludeExcludeItemsPage();
         modelFormPage = new ModelFormPage();
         nestedIframePage = new NestedIframePage();
         normalIFramePage = new NormalIFramePage();
@@ -214,4 +217,5 @@ public class Pages {
     public SnapToIncrementsPage getSnapToIncrementsPage(){return snapToIncrementsPage;}
     public SpinnerOverflow getSpinnerOverflow(){return spinnerOverflow;}
     public DisplayAsGridPage getDisplayAsGridPage(){return displayAsGridPage;}
+    public IncludeExcludeItemsPage getIncludeExcludeItemsPage(){return includeExcludeItemsPage;}
 }
